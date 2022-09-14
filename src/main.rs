@@ -11,3 +11,7 @@ use storage::*;
 fn main() {
     println!("Hello, world!");
 }
+
+fn test() {
+    println!("push to git");
+}
