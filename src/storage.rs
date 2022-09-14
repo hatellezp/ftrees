@@ -43,6 +43,9 @@ impl<T> AbstractStorage<T> for Storage<T> {
 }
 
 impl<T: PartialEq> Storage<T> {
+    // this can be modified after (if I find a better way to do it)
+
+
     pub fn contains_value(&self, value: &T) -> bool {
         for (_, v) in self.data.iter() {
             if v == value {
